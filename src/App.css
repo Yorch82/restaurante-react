@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.App {
+    font-family: Raleway, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    background-color: rgb(126, 136, 136);
+}
