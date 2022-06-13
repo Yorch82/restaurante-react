@@ -26,6 +26,13 @@ function App() {
       price:10,
       image:'https://www.hundredburgers.com/img/burger-hero.b2b9d524.jpg'
     },
+    {
+      id:4,
+      name:'Sushi',
+      description:'Comida japonesa estilo Japeruvian',
+      price:50,
+      image:'https://7televalencia.com/wp-content/uploads/2019/04/sushi-e1556275361391.jpg'
+    },
   ]
   return (
     <div className="App">

@@ -6,6 +6,7 @@
     transition: 0.3s;
     border-radius: 5px;
     width: 20%;
+    margin-top: 10px;
     margin-left: 10px;
     padding: 2px 16px;
   }
@@ -35,5 +36,5 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 50rem;     
+    width: 100%;     
   }
