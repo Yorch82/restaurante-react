@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import './ConactForm.css'
+import './ContactForm.css'
 import { useNavigate } from "react-router-dom";
 
 export const ContactForm = () => {
@@ -8,7 +8,10 @@ export const ContactForm = () => {
     name: "",
     phone: "",
     email: "",
-    text:""
+    datetime:"",
+    people:"",
+    text:"",
+    
   });
   const [btnDisabled, setBtnDisabled] = useState(true);
   const [message, setMessage] = useState("");
@@ -17,6 +20,8 @@ export const ContactForm = () => {
     name: "",
     phone: "",
     email: "",
+    datetime:"",
+    people:"",
     text:""
   };
   const clearState = () => {
@@ -50,7 +55,7 @@ export const ContactForm = () => {
   return (
     <form className="formulario" onSubmit={handleSubmit}>
         <fieldset>
-            <legend>Rellena todos los campos</legend>
+            <legend>Solicita reserva</legend>
             <div>
                 <div className="entrada">
                     <label>Nombre</label>
@@ -65,8 +70,24 @@ export const ContactForm = () => {
                     <input className="datos" type="email" placeholder="Su correo electrónico aquí..." onChange={handleInputChange} name="email"/>
                 </div>
                 <div className="entrada">
+                    <label>Fecha y hora</label>
+                    <input className="datos" type="datetime-local" placeholder="Cuando quiere la reserva..." onChange={handleInputChange} name="datetime"/>
+                </div>
+                <div className="entrada">
+                    <label>Nº comensales</label>
+                    <select name="combo">                  
+                      <option onChange={handleInputChange} name="people" value="1">1</option>
+                      <option onChange={handleInputChange} name="people" value="2" selected>2</option>
+                      <option onChange={handleInputChange} name="people" value="3">3</option>
+                      <option onChange={handleInputChange} name="people" value="4">4</option>
+                      <option onChange={handleInputChange} name="people" value="5">5</option>
+                      <option onChange={handleInputChange} name="people" value="6">6</option>
+                    </select>
+                    {/* <input className="datos" type="email" placeholder="Su correo electrónico aquí..." onChange={handleInputChange} name="email"/> */}
+                </div>
+                <div className="entrada">
                     <label>Mensaje</label>
-                    <textarea  className="datos" placeholder="Escriba aquí su consulta..." name="text"></textarea>
+                    <textarea  className="datos" placeholder="Escriba aquí su consulta..." onChange={handleInputChange} name="text"></textarea>
                 </div>
             </div>
             <div>

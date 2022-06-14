@@ -1,0 +1,57 @@
+.formulario {  /** aplicamos estilos al formulario de contacto **/    
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px; 
+}
+.formulario fieldset {
+    border: none;
+
+}.formulario legend {  /** Aplicamos estilos al legend del formulario **/
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+        
+}
+legend {
+  text-align: center; /* Alineamos al centro titulo formulario */
+  width: 100%; /* Damos anchura 100% para que quepa legend en una linea*/
+}
+
+.entrada {
+    margin-bottom: 10px;  /** Separación de 10px entre los distintos campos del formulario **/
+}
+
+.entrada label {  /** Aplicamos estilos a las etiquetas de los campos del fomrulario **/    
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.datos {
+    width: 100%; /** Toma todo el espacio disponible **/
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+.boton {
+    background-color:darkslategrey ;
+    color:aliceblue;
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    
+}
+
+.entrada textarea {
+    height: 50px;
+}
