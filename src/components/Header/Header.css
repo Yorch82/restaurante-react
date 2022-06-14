@@ -7,3 +7,21 @@
     font-size: 25px;
     color: white;    
   }
+
+  .App-header div {
+    width:50%;
+  }
+  
+  .links span{
+      display: flex;       
+      align-items: center;
+      justify-content: flex-end;
+      
+  }
+  
+  .link {
+    text-decoration: none;
+      color: white;
+      margin-left: 10px;
+      margin-right: 10px;
+  }

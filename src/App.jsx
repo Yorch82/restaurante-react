@@ -1,7 +1,9 @@
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-
+import ContactForm from "./components/ContactForm/ContactForm"
+import AboutUs from "./components/AboutUs/AboutUs"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 function App() {
   const dishes = [
@@ -36,8 +38,14 @@ function App() {
   ]
   return (
     <div className="App">
+      <BrowserRouter>
       <Header />
-      <Home platos={dishes}/>
+      <Routes>     
+        <Route path="/" element={<Home platos={dishes} />} />
+        <Route path="/about" element={<AboutUs />} />             
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>      
+      </BrowserRouter>     
     </div>
   );
 }
